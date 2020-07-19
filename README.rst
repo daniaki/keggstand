@@ -42,10 +42,10 @@ accession to the method below:
 
 .. code-block::
 
-   client.get_pathway(pathway='path:hsa01521')
-   client.entries  # Inspect individual protein/genes parsed from XML file
-   client.relations  # Inspect relations between entries parsed from XML file
-   client.interactions  # DataFrame of interactions with annotated post-translational modifications
+   pathway = client.get_pathway(pathway='path:hsa01521')
+   pathway.entries  # Inspect individual protein/genes parsed from XML file
+   pathway.relations  # Inspect relations between entries parsed from XML file
+   pathway.interactions  # DataFrame of interactions with annotated post-translational modifications
 
 To make a call to the accession mapping service you can convert a source database to a destination 
 database:
