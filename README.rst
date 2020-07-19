@@ -14,7 +14,6 @@ KEGG API client and parsers for pathway protein-protein interactions
 
 
 * Free software: MIT license
-* Documentation: https://keggstand.readthedocs.io.
 
 
 Usage
