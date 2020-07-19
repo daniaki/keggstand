@@ -2,7 +2,7 @@
 
 __author__ = """Daniel Esposito"""
 __email__ = "danielce90@gmail.com"
-__version__ = "__version__ = '0.0.2'"
+__version__ = "__version__ = '__version__ = '0.1.0''"
 
 
 from . import api
