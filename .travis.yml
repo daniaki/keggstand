@@ -1,20 +1,17 @@
 language: python
 python:
-- 3.8
-- 3.7
-- 3.6
+    - 3.8
+    - 3.7
+    - 3.6
 install: pip install -U tox-travis
 script: tox
 deploy:
-  provider: pypi
-  distributions: sdist bdist_wheel
-  user: daniaki
-  password:
-    secure: PLEASE_REPLACE_ME
-  on:
-    tags: true
-    repo: daniaki/keggstand
-    python: 3.8
-env:
-  global:
-    secure: N6wH9HjuzBUiHMK1t6oPdNI5mXBD4ZG1+dZ8gQVSPyg+i6X9JYBhl1JNYOSbJVt+ykvASxMJ2ZZ33kRtqSuvO2559lEFiWBrojB6FBf8wpSA8thzC1gUuXO057HbQam0ckLC4LwKPHhQY/qHNgLvKLTy8ckUwRc7ElO3RU8uYthl79zYaNMlE4aHTVPb9bDkPwZXLHLyRkM4YC/nAivyh5qto4aCVNiKyUZTBS2hi0YuRHw6xsTojB0gUQgYIam5/wbkwcpWEO/l4psFwFpnUF2a9DTA1ot87PvX9lXiz6/R71zLPAAyxrcx1UhlWU6Sv3E12VfLQCMpUpOeJN6/QeI3qg74fSzaMmOpHnw9E3r2Pc5mQFzoGoBfWWTBMOt78rN3TgwRWAQ1bSGcbc1aS+GCwfcPCJk+Se8T6G6Def54Xk72UHg5uwAEBhKnIkg+eGm0qBg4dRTufABgYihwaAYfiEw/VhcsX8xjBR/euLDeMQRz/DgW1+yIg3UhoI06kyaukzfUxyeP29wQa+TXYBmZFSt9zU7KZuqYDGilywOsKJt88VI3W6Osl4o2LYJCvzOQVyuKEytXKlCu6PNZfKfJDqITMCk763kiTM/wTW+sjTi6s1QlGN65p3IW2yqjkkWJzQ/1dx3hupqVj9W7r4ZmNoF9rT/bnA3yXdZy1tw=
+    provider: pypi
+    distributions: sdist bdist_wheel
+    user: daniel.esposito
+    password:
+        secure: N6wH9HjuzBUiHMK1t6oPdNI5mXBD4ZG1+dZ8gQVSPyg+i6X9JYBhl1JNYOSbJVt+ykvASxMJ2ZZ33kRtqSuvO2559lEFiWBrojB6FBf8wpSA8thzC1gUuXO057HbQam0ckLC4LwKPHhQY/qHNgLvKLTy8ckUwRc7ElO3RU8uYthl79zYaNMlE4aHTVPb9bDkPwZXLHLyRkM4YC/nAivyh5qto4aCVNiKyUZTBS2hi0YuRHw6xsTojB0gUQgYIam5/wbkwcpWEO/l4psFwFpnUF2a9DTA1ot87PvX9lXiz6/R71zLPAAyxrcx1UhlWU6Sv3E12VfLQCMpUpOeJN6/QeI3qg74fSzaMmOpHnw9E3r2Pc5mQFzoGoBfWWTBMOt78rN3TgwRWAQ1bSGcbc1aS+GCwfcPCJk+Se8T6G6Def54Xk72UHg5uwAEBhKnIkg+eGm0qBg4dRTufABgYihwaAYfiEw/VhcsX8xjBR/euLDeMQRz/DgW1+yIg3UhoI06kyaukzfUxyeP29wQa+TXYBmZFSt9zU7KZuqYDGilywOsKJt88VI3W6Osl4o2LYJCvzOQVyuKEytXKlCu6PNZfKfJDqITMCk763kiTM/wTW+sjTi6s1QlGN65p3IW2yqjkkWJzQ/1dx3hupqVj9W7r4ZmNoF9rT/bnA3yXdZy1tw=
+    on:
+        tags: true
+        repo: daniaki/keggstand
+        python: 3.8

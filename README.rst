@@ -42,13 +42,16 @@ accession to the method below:
 
 .. code-block::
 
-   client.get_pathway(pathway=accessions[0][0])
+   client.get_pathway(pathway='path:hsa01521')
+   client.entries  # Inspect individual protein/genes parsed from XML file
+   client.relations  # Inspect relations between entries parsed from XML file
+   client.interactions  # DataFrame of interactions with annotated post-translational modifications
 
 To make a call to the KeggDBLink service you can convert a source database to a target database:
 
 .. code-block::
 
-   client.convert(source='hsa', target='swissprot')
+   client.convert(source='hsa', destination='swissprot')
 
 This will create a mapping from KEGG hsa identifiers to uniprot swissprot identifiers.
 
