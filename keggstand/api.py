@@ -171,7 +171,9 @@ class Kegg:
     def get_pathway(self, pathway: PathwayAccession) -> KeggPathway:
         location = [pathway, "kgml"]
         if self.use_cache and self.get_from_cache(location):
-            cached: KeggPathway = KeggPathway(xml=self.get_from_cache(location))
+            cached: KeggPathway = KeggPathway(
+                xml=self.get_from_cache(location)
+            )
             return cached
 
         pathway = pathway.split(":")[-1]

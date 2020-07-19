@@ -47,7 +47,8 @@ accession to the method below:
    client.relations  # Inspect relations between entries parsed from XML file
    client.interactions  # DataFrame of interactions with annotated post-translational modifications
 
-To make a call to the KeggDBLink service you can convert a source database to a target database:
+To make a call to the accession mapping service you can convert a source database to a destination 
+database:
 
 .. code-block::
 
