@@ -1,17 +1,16 @@
 language: python
 python:
-- 3.8
-- 3.7
-- 3.6
+    - 3.8
+    - 3.7
+    - 3.6
 install: pip install -U tox-travis
 script: tox
 deploy:
-  provider: pypi
-  distributions: sdist bdist_wheel
-  user: __token__
-  password:
-    secure: jyFIUYSVVBRcSSQYSozhx+oOrnM+ZFl2Z/BLldfQ/BE3OD6z6bosXvtN8k3fHh2giK4IDMAm6y2kO3RksYFan2hC9+iDXlMn3lhzM6Zyz13VqJOHnREGr80eu1/db5AZ6IAdk+lWVbKA70d0eIcFwwc5xWMIrxjWm/rWCrXqruQX6kl7Y83p1n+vsWOYDQD1xDxqqt6kaANHkrDCkOSqVZOui5Gqw/Bemw2sPFFvmE5llJ5i+L5DxOp4WBS9MtMq84nUankDXi6B9O1vq8WjVLUWrF4mYrLjPSSGLez7eGZTMIu3/NniK8IFk7LSslpQSMVOqlX3LBky/xKTT0rxpT/nm3KtDqMEBrUXrZrfGasd3ca+gXKHTehfMOANMq634ETH1h7YwGZZBV9FpvgJ2XEVjbRPxkxf3lVmpGEHkVX6cf5jxHznslJy2+43RJ5TRvb5e2yD//fJ8o0tSGcccf7oGqJJS0UoCdzFPONXYe2bOCbDN0IoyucuT+Ar/ocNo/EnMFS37+3ry9niWamxijqBe1xiv41BIXE58Ywdjk/dZLVrDohOy5RFz4fBSYTE/LqN0gehy+yXAw/KnKoT/PIjO0PR76URG9ty5o9YGDpmmoSQojK7n4qKv2OW00fIsuoidWjW+/4HiT92fbKPUrooFpRqqoGUmlXSB/AwnP0=
-  on:
-    tags: true
-    repo: daniaki/keggstand
-    python: 3.8
+    provider: pypi
+    distributions: sdist bdist_wheel
+    user: __token__
+    password:
+        secure: jyFIUYSVVBRcSSQYSozhx+oOrnM+ZFl2Z/BLldfQ/BE3OD6z6bosXvtN8k3fHh2giK4IDMAm6y2kO3RksYFan2hC9+iDXlMn3lhzM6Zyz13VqJOHnREGr80eu1/db5AZ6IAdk+lWVbKA70d0eIcFwwc5xWMIrxjWm/rWCrXqruQX6kl7Y83p1n+vsWOYDQD1xDxqqt6kaANHkrDCkOSqVZOui5Gqw/Bemw2sPFFvmE5llJ5i+L5DxOp4WBS9MtMq84nUankDXi6B9O1vq8WjVLUWrF4mYrLjPSSGLez7eGZTMIu3/NniK8IFk7LSslpQSMVOqlX3LBky/xKTT0rxpT/nm3KtDqMEBrUXrZrfGasd3ca+gXKHTehfMOANMq634ETH1h7YwGZZBV9FpvgJ2XEVjbRPxkxf3lVmpGEHkVX6cf5jxHznslJy2+43RJ5TRvb5e2yD//fJ8o0tSGcccf7oGqJJS0UoCdzFPONXYe2bOCbDN0IoyucuT+Ar/ocNo/EnMFS37+3ry9niWamxijqBe1xiv41BIXE58Ywdjk/dZLVrDohOy5RFz4fBSYTE/LqN0gehy+yXAw/KnKoT/PIjO0PR76URG9ty5o9YGDpmmoSQojK7n4qKv2OW00fIsuoidWjW+/4HiT92fbKPUrooFpRqqoGUmlXSB/AwnP0=
+    on:
+        tags: true
+        repo: daniaki/keggstand

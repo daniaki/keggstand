@@ -43,16 +43,22 @@ accession to the method below:
 .. code-block::
 
    pathway = client.get_pathway(pathway='path:hsa01521')
-   pathway.entries  # Inspect individual protein/genes parsed from XML file
-   pathway.relations  # Inspect relations between entries parsed from XML file
-   pathway.interactions  # DataFrame of interactions with annotated post-translational modifications
+   
+   # Inspect individual protein/genes parsed from XML file
+   pathway.entries
+   
+   # Inspect relations between entries parsed from XML file
+   pathway.relations
+
+   # Pandas DataFrame of interactions with annotated post-translational modifications
+   pathway.interactions
 
 To make a call to the accession mapping service you can convert a source database to a destination 
 database:
 
 .. code-block::
 
-   client.convert(source='hsa', destination='swissprot')
+   client.convert(source='hsa', destination='uniprot')
 
 This will create a mapping from KEGG hsa identifiers to uniprot swissprot identifiers.
 
